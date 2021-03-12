@@ -1,0 +1,20 @@
+body {
+  background-color: rgb(248, 247, 247);
+
+  text-align: center;
+}
+h1 {
+  font-size: 72px;
+  font-family: monospace;
+  color: rgb(14, 13, 13);
+  margin-top: 40px;
+
+  background-color: bisque;
+  padding: 20px;
+  
+}
+
+span {
+  background-color: goldenrod;
+  font-size: 48px;
+}
