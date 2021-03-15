@@ -1,0 +1,62 @@
+body {
+  background-color: bisque;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #444;
+}
+
+header {
+  text-align: center;
+  padding: 50px;
+}
+
+h1 {
+  font-size: xx-large;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: x-large;
+}
+
+section {
+  background-color: seashell;
+  padding: 50px;
+  width: 50%;
+  margin: 20px auto;
+  height: 220px;
+  position: relative;
+}
+
+.static {
+  position: static;
+}
+
+#static {
+  position: static;
+  top: 0px;
+}
+
+#relative {
+  position: relative;
+  top: -40px;
+  left: 150px;
+
+}
+
+#absolute {
+  position: absolute;
+  top: 150px;
+  left: 50px;
+}
+
+#fixed {
+  position: fixed;
+  top: 0px;
+  right: 20px;
+}
+
+#absolute-parent-static {
+  position: absolute;
+  bottom: 0px;
+  left: 50px;
+}

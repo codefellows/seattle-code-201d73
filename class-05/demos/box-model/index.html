@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    .container {
+      width: 70%;
+      margin: 0 auto;
+      background-color: bisque;
+    }
+
+    p {
+      background-color: red;
+      color: white;
+      font-size: xx-large;
+    }
+
+    blockquote {
+      font-size: x-large;
+    }
+  </style>
+  <title>Box Model</title>
+</head>
+
+<body>
+  <div class="container">
+
+    <h1>CSS Box Model</h1>
+
+    <h2>Red is the background color and green is the border color of each paragraph element.</h2>
+
+    <p>Content - The content of the box, where text and images appear</p>
+
+    <blockquote><strong>NOTE: </strong>Notice how p elements take up full width of their container</blockquote>
+
+    <p style="padding-left: 20px;">Padding - Clears an area around the content. The padding is transparent</p>
+
+    <blockquote>See how the background-color accounts for padding</blockquote>
+
+    <p style="padding-left: 20px; border: 5px solid green;">Border - A border that goes around the padding and content
+    </p>
+
+    <blockquote>The background color does not extend beyond the padding</blockquote>
+
+    <p style="padding-left: 20px; margin-left: 20px; border: 5px solid green;">Margin - Clears an area outside the
+      border.
+      The
+      margin is transparent</p>
+
+    <blockquote>
+      The box now has 20px of transparent space to the left of bordered box.
+    </blockquote>
+
+    <cite>
+      <a href="https://www.w3schools.com/css/css_boxmodel.asp">CSS Box Model</a>
+    </cite>
+  </div>
+
+</body>
+
+</html>
