@@ -46,7 +46,7 @@ section {
 #absolute {
   position: absolute;
   top: 150px;
-  left: 50px;
+  left: 150px;
 }
 
 #fixed {
@@ -59,4 +59,17 @@ section {
   position: absolute;
   bottom: 0px;
   left: 50px;
+}
+
+#sticky {
+  position: sticky;
+  top: 0px;
+  z-index: 100;
+}
+
+nav {
+  background-color: forestgreen;
+  color: white;
+  font-size: xx-large;
+  padding: 20px;
 }
