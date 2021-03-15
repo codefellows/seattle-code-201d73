@@ -1,0 +1,29 @@
+* {
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: bisque;
+}
+#kittenProfiles {
+  display: flex;
+}
+
+#kittenProfiles article {
+  flex: 1;
+  border: 1px solid royalblue;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(189, 204, 250);
+  color: rgb(61, 40, 1);
+  text-align: center;
+}
+
+
+#kittenProfiles ul {
+  list-style-type: none;
+  text-align: left;
+  position: relative;
+  left: 70px;
+}
