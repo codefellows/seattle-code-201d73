@@ -1,5 +1,56 @@
 * {
-  font-family: Arial, sans-serif;
+  font-family: Tahoma, sans-serif;
+}
+
+header {
+  background-color: rgb(199, 149, 174);
+  display: flex;
+  padding: 1rem;
+  justify-content:space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  height: 3rem;
+}
+
+h1 {
+  font-size: 3rem;
+  padding-left: 1rem;
+}
+
+
+h2 {
+  font-size: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+header p {
+  padding-right: 5rem;
+}
+
+main {
+  padding-top: 5rem;
+  width: 80%;
+  margin: 0 auto;
+}
+
+#lorem {
+  text-indent: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+#article-container {
+  display: flex;
+}
+
+
+#article-container p{
+  margin-right: 1rem;
+  height: 4rem;
+  overflow-y: scroll;
 }
 
 #kittenProfiles {
@@ -9,9 +60,10 @@
 #kittenProfiles article {
   flex: 1;
   margin: 20px;
-  background-color: bisque;
+  background-color: rgb(151, 167, 235);
   padding: 10px;
   border-radius: 10px;
+  border: 2px solid rgb(82, 80, 195);
 }
 
 table, th, td {
@@ -22,6 +74,7 @@ table {
   width: 100%;
   border-collapse: collapse;
   margin: 20px auto;
+  background-color: bisque;
 }
 
 img {

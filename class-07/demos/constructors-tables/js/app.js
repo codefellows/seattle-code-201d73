@@ -10,7 +10,7 @@
 // good with other cats
 // breed
 
-'use strict';
+'use strict'
 
 
 
