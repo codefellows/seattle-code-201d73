@@ -62,6 +62,7 @@ main {
   margin: 20px;
   background-color: rgb(151, 167, 235);
   padding: 10px;
+  border: 2px solid rgb(241, 202, 154);
   border-radius: 10px;
   border: 2px solid rgb(82, 80, 195);
 }
@@ -70,15 +71,20 @@ table, th, td {
   border: 1px solid black;
 }
 
+
 table {
-  width: 100%;
+  width: 80%;
   border-collapse: collapse;
   margin: 20px auto;
+<<<<<<< HEAD
   background-color: bisque;
 }
+=======
+} 
+>>>>>>> aa02d9a1113f6e200bcbd7424f65bd35857bf6a0
 
 img {
   max-width: 100%;
-  min-width: 100%;
+  min-width: 100%; 
 }
 
