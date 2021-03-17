@@ -11,6 +11,7 @@
   margin: 20px;
   background-color: bisque;
   padding: 10px;
+  border: 2px solid rgb(241, 202, 154);
   border-radius: 10px;
 }
 
@@ -18,14 +19,15 @@ table, th, td {
   border: 1px solid black;
 }
 
+
 table {
-  width: 100%;
+  width: 80%;
   border-collapse: collapse;
   margin: 20px auto;
-}
+} 
 
 img {
   max-width: 100%;
-  min-width: 100%;
+  min-width: 100%; 
 }
 
