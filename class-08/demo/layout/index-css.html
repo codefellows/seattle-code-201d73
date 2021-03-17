@@ -13,6 +13,10 @@
       font-family: Arial, Helvetica, sans-serif;
     }
 
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
     header {
       background-color: gray;
       position: fixed;
@@ -39,6 +43,30 @@
       width: 92%;
       margin: 0 auto;
       margin-top: 6rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    #article-container {
+      display: flex;
+      height: 12rem;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+
+    }
+
+    #article-container p {
+      margin-right: 2rem;
+      overflow-y: scroll;
+    }
+
+    footer {
+      background-color: gray;
+      padding: 2rem;
     }
   </style>
 </head>
@@ -103,7 +131,7 @@
     <hr class="" />
 
     <h2 class="">Four articles about Kitties</h2>
-    <div class="">
+    <div id="article-container">
       <p class="">
         Attack dog, run away and pretend to be victim my left donut is missing, as is my right if it fits, i sits or
         lick
