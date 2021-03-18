@@ -1,0 +1,125 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background-color: gray;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+}
+
+h1 {
+  font-size: 3rem;
+  font-family: monospace;
+  font-weight: bold;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+header p {
+  padding-right: 2rem;
+}
+
+main {
+  width: 85%;
+  margin: 0 auto;
+  margin-top: 6rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+#article-container {
+  display: flex;
+  height: 12rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+
+}
+
+#article-container p {
+  margin-right: 2rem;
+  overflow-y: scroll;
+}
+
+footer {
+  background-color: gray;
+  padding: 2rem;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  padding: 10px;
+
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+
+}
+
+th {
+  font-style: bold;
+  text-transform: capitalize;
+}
+
+tr:nth-child(even){background-color: #f2f2f2;}
+
+tr:hover {background-color: #ddd;}
+
+hr {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+form {
+  background-color: lightgray;
+  padding: 1.5rem;
+  border-radius: .5rem;
+  margin-top: 3rem;
+}
+
+fieldset {
+  background-color: rgb(184, 198, 202);
+  padding: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+label {
+  margin-right: 1rem;
+}
+
+input[type=text] {
+  margin-left: 1rem;
+}
+
+form p {
+  margin-top: 2rem;
+}
+
+form button {
+  background-color: royalblue;
+  padding: .25rem .5rem;
+  border-radius: .5rem;
+  color: white;
+
+}
+
+form button:hover {
+  background-color: blue;
+}
