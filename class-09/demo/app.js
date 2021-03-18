@@ -11,6 +11,8 @@ function Kitten(name, breed, interests, coatColor, goodWithKids, goodWithDogs, g
   this.goodWithKids = goodWithKids;
   this.goodWithDogs = goodWithDogs;
   this.goodWithCats = goodWithCats;
+
+  allKittens.push(this);
 }
 
 Kitten.prototype.render = function () {
@@ -79,19 +81,24 @@ function addKittenHandler(event) {
 
   const newKitten = new Kitten(name, breed, interests, coatColor, isGoodWithKids, isGoodWithDogs, isGoodWithOtherCats);
 
-  allKittens.push(newKitten);
-
   table.innerHTML = '';
+
+  renderTable();
+
+  event.target.reset();
+
+}
+
+function renderTable() {
 
   createHeaderRow();
 
   renderKittens();
 
   createFooterRow();
-
-  event.target.reset();
-
 }
+
+// wire up event listener
 const addKittenForm = document.getElementById('add-kitten-form');
 addKittenForm.addEventListener('submit', addKittenHandler);
 
@@ -99,13 +106,4 @@ addKittenForm.addEventListener('submit', addKittenHandler);
 
 const hissy = new Kitten('Hissy', 'Tabby', 'hissing, more hissing', 'brown', false, false, false);
 
-allKittens.push(hissy);
-
-
-// start up
-createHeaderRow();
-
-// render all available kittens
-renderKittens();
-
-createFooterRow();
+renderTable();
