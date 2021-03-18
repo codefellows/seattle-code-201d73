@@ -1,0 +1,31 @@
+# GitHub Branch Flow
+
+- fork (NOT clone) the supplied GitHub repo
+- clone YOUR forked version of repo to machine
+- cd into local repo
+- Create feature branch and switch to it
+- `git checkout -b first-feature-branch`
+- The feature should be focused on a particular task
+  - I.e. `sum-function` is good, `class-5` is not good.
+- Do all your work for the task on feature branch.
+- When task complete Add/Commit/Push to Github.
+  - Since Github doesn't yet know about this new branch you'll get an error with helpful suggestion.
+  - follow the direction to `--set-upstream`
+  - Once local changes have been pushed to GitHub then open repo in broswer and create a Pull Request.
+    - **GOTCHA ALERT** -  make sure the Pull Request is from your feature branch to main branch in YOUR repo. 
+    - Use the pull down menus as needed 
+    - Merge the code in Pull Request into main branch.
+    - Go ahead and delete the feature branch on GitHub.
+      - You don't need it anymore, and you can always restore it later if needed.
+  - Now that Github is in good shape head back to your terminal.
+  - You are probably still on feature branch locally.
+  - `git checkout main` to switch to main brain.
+    - note that we don't use `-b` this time 
+  - **IMPORTANT** `git pull` to get local branch in sync with repo. 
+    - Make sure you do this **before** creating next feature branch.
+- Now everything is in sync. 
+- You can now delete the local feature branch 
+  -  `git branch -D first-feature-branch`
+-  Before you start working on next feature create a new feature branch.
+  - `git checkout -b second-feature-branch`
+- Repeat as necessary

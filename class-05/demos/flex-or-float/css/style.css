@@ -1,0 +1,67 @@
+@import url(https://fonts.googleapis.com/css?family=Just+Another+Hand|Wire+One|Tulpen+One|Eczar);
+
+/* makes it so that borders are included in width/height */
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+/* Check out the fancy imported fonts! */
+body {
+  /* font-family: 'Just Another Hand', sans-serif; */
+  /* font-family: 'Tulpen One', sans-serif; */
+  /* font-family: 'Eczar', sans-serif; */
+  font-family: 'Wire One', sans-serif;
+  background-color: bisque;
+  font-size: 48px;
+  text-align: center;
+}
+
+/* make 1/2 width and centered */
+main {
+  width: 50%;
+  margin: 0 auto;
+}
+
+section {
+  background-color: rgb(76, 141, 76);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+img {
+  border: 10px solid rgb(235, 77, 77);
+}
+
+/* float layout rules */
+.floaty img {
+  float: left;
+  padding: 15px;
+}
+
+.floaty:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.col-4 img {
+  width: 25%;
+}
+
+.col-2 img {
+  width: 50%;
+}
+
+/* flexbox layout rules */
+.flexy {
+  display: flex;
+}
+
+.flexy img {
+  flex: 1;
+  min-width: 0;
+  padding: 15px;
+}
