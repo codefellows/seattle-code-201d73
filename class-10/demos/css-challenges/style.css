@@ -1,0 +1,14 @@
+body {
+  background-color: bisque;
+}
+main {
+  display: flex;
+  justify-content: center;
+}
+.challenge {
+  height: 400px;
+  width: 400px;
+  margin: 2rem;
+}
+
+

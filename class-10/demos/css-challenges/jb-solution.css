@@ -1,0 +1,72 @@
+.lines {
+  height: 100%;
+  background-color: rgb(92, 199, 92);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.line {
+  height: 2%;
+  width: 25%;
+  background-color: white;
+  margin: 2% auto;
+  border-radius: .5rem;
+}
+
+/* challenge 2 */
+#challenge-2 {
+  background: #62374e;
+  display: flex;
+  justify-content: space-between;
+}
+
+#challenge-2 section {
+  margin: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+ #challenge-2 div {
+  width: 80px;
+  height: 80px;
+  background: #fdc57b;
+}
+
+
+/* challenge 3 */
+
+#outer {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+
+#inner {
+  background-color: firebrick;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+}
+
+#so-close {
+  background-color: firebrick;
+  width: 50%;
+  height: 50%;
+  border-radius: 100%;
+  border: calc(400px / 8) solid white;
+  margin: 0 auto;
+  top: 12.5%;
+  position: relative;
+}
+
+#bulls-eye {
+  background-color: white;
+  width: 50%;
+  height: 50%;
+  border-radius: 100%;
+  margin: 0 auto;
+  top: 25%;
+  position: relative;
+}
