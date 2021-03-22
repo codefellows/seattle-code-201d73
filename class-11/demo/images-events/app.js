@@ -1,7 +1,7 @@
 'use strict';
 
 // Globals
-const goatImageSectionTag = document.getElementById('all-goats');
+const goatImageSectionTag = document.getElementById('goat-pics');
 const leftGoatImageTag = document.getElementById('left-goat-img');
 const rightGoatImageTag = document.getElementById('right-goat-img');
 const leftGoatHeaderTag = document.getElementById('left-goat-h2');
@@ -59,14 +59,14 @@ const handleClickOnGoat = function (event) {
 
       if (id === 'left-goat-img') {
         leftGoatOnThePage.clicks += 1;
-      } else if (id === 'right-goat-img') {
+      } else {
         rightGoatOnThePage.clicks += 1;
       }
 
       leftGoatOnThePage.timesShown += 1;
       rightGoatOnThePage.timesShown += 1;
 
-      //after we update the old, safe to pick new goats
+      //after we update data it's safe to pick new goats
       pickNewGoats();
     }
   }
@@ -125,5 +125,3 @@ new Goat('Sassy', './images/sassy-goat.jpg');
 new Goat('Goat Out of Hand', './images/goat-out-of-hand.jpg');
 
 pickNewGoats();
-
-renderLikes();

@@ -4,44 +4,77 @@
 
 body {
   background:radial-gradient(#18ad31, #fff) fixed;
-
+  font-family: 'Pangolin', cursive;
 }
 
 header {
   background: #18ad3155;
-  width: 100%;
 }
 
-nav ul {
-  display: flex;
-  list-style-type: none;
-  gap: 1rem;
-  padding: 2rem;
+nav {
+  padding: 20px;
+  font-size: x-large;
+}
+
+a {
+  margin-right: 10px;
 }
 
 main {
-  display: flex;
-  gap: 2rem;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+h1 {
+  font-size: xx-large;
+  text-align: center;
+}
+h2 {
+  font-size: x-large;
+  margin-bottom: 10px;
+}
+#goat-likes {
+  float: left;
+  width: 13%;
+  margin-right: 2%;
 }
 
-
-#goat-likes, #goat-facts {
-  flex:1;
+#goat-facts {
+  float: left;
+  width: 13%;
+  margin-left: 2%;
 }
+
 
 #all-goats {
-  flex: 2;
+  width: 70%;
+  float: left;
 }
 
-#goat-pics {
-  display: flex;
-  gap: 1rem;
+figure {
+  width: 50%;
+  float: left;
+  padding: 20px;
+  text-align: center;
 }
 
-#goat-pics div {
-  flex: 1;
-}
-
-#goat-pics img {
+img {
+  /* lots of different strategies to handle differently sized images */
   max-width: 100%;
+  object-fit: contain;
+  height: 600px;
+}
+
+footer {
+  text-align: center;
+  font-size: x-large;
+  padding: 20px;
+  background: #18ad3155;
+}
+
+/* with flexbox this usually isn't an issue */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
 }
