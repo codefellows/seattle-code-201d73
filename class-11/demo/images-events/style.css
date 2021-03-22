@@ -1,0 +1,47 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  background:radial-gradient(#18ad31, #fff) fixed;
+
+}
+
+header {
+  background: #18ad3155;
+  width: 100%;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+main {
+  display: flex;
+  gap: 2rem;
+}
+
+
+#goat-likes, #goat-facts {
+  flex:1;
+}
+
+#all-goats {
+  flex: 2;
+}
+
+#goat-pics {
+  display: flex;
+  gap: 1rem;
+}
+
+#goat-pics div {
+  flex: 1;
+}
+
+#goat-pics img {
+  max-width: 100%;
+}
