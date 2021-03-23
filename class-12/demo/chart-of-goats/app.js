@@ -29,20 +29,26 @@ Goat.all = [];
 
 function pickNewGoats() {
 
-  const prevLeft = leftGoatOnThePage;
-  const prevRight = rightGoatOnThePage;
+  // rule: next goats can NOT have been any of the previous goats
+  // AND not break the unique rule
+
+  const previousLeft = leftGoatOnThePage; // the goat just shown on left
+  const previousRight = rightGoatOnThePage;  // the goat just shown on right
 
   shuffle(Goat.all);
 
   for (let goat of Goat.all) {
-    if (goat !== prevLeft && goat !== prevRight) {
+    // goat = current goat object in array
+    if (goat !== previousLeft && goat !== previousRight) {
       leftGoatOnThePage = goat;
+      break;
     }
   }
 
   for (let goat of Goat.all) {
-    if (goat !== prevLeft && goat !== prevRight && goat !== leftGoatOnThePage) {
+    if (goat !== previousLeft && goat !== previousRight && goat !== leftGoatOnThePage) {
       rightGoatOnThePage = goat;
+      break;
     }
   }
 
@@ -92,6 +98,7 @@ const handleClickOnGoat = function (event) {
     pickNewGoats();
 
   } else {
+
     goatImageSectionTag.removeEventListener('click', handleClickOnGoat);
     // console.log('you picked 5 goats, thanks!');
     alert('All this clicking has goat to stop');
@@ -158,22 +165,25 @@ function makeAGoatChart() {
 
 
   // refactoring opportunity?
-  for (let i = 0; i < Goat.all.length; i++) {
-    const singleGoatName = Goat.all[i].name;
-    goatNamesArray.push(singleGoatName);
-  }
+  // for (let i = 0; i < Goat.all.length; i++) {
+  //   const singleGoatName = Goat.all[i].name;
+  //   goatNamesArray.push(singleGoatName);
 
-  for (let i = 0; i < Goat.all.length; i++) {
-    const singleGoatLikes = Goat.all[i].clicks;
-    goatLikesArray.push(singleGoatLikes);
-  }
-
-  // /* alternate way to build local arrays
-  //    Notice the "of" */
-  // for (let goat of Goat.all) {
-  //   goatNamesArray.push(goat.name);
-  //   goatLikesArray.push(goat.clicks);
   // }
+
+  // for (let i = 0; i < Goat.all.length; i++) {
+  //   const currentGoat = Goat.all[i];
+  //   const singleGoatLikes = currentGoat.clicks;
+  //   goatLikesArray.push(singleGoatLikes);
+  // }
+
+  /* alternate way to build local arrays
+     Notice the "of" */
+
+  for (let goat of Goat.all) {
+    goatNamesArray.push(goat.name);
+    goatLikesArray.push(goat.clicks);
+  }
 
   const ctx = document.getElementById('goatChart').getContext('2d');
   const goatChart = new Chart(ctx, {
