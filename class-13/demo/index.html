@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>Local Coffee Company</title>
+    </head>
+    <body>
+      <main>
+        <form id="orderForm">
+          <fieldset>
+            <legend>Place Your Order</legend>
+            <label>First Name</label>
+            <input type="text" name="name">
+
+            <label>Size</label>
+            <select name="size">
+              <option value="8">8oz</option>
+              <option value="12">12oz</option>
+              <option value="16">16oz</option>
+              <option value="20">20oz</option>
+            </select>
+
+            <label>Milk</label>
+            <select name="milk">
+              <option value="soy">Soy Milk</option>
+              <option value="whole">Whole Milk</option>
+              <option value="oat">Oat Milk</option>
+              <option value="nonfat">Nonfat Milk</option>
+              <option value="no">None</option>
+            </select>
+
+            <label>Drink</label>
+            <select name="drinkType">
+              <option value="americano">Americano</option>
+              <option value="mocha">Mocha</option>
+              <option value="dripCoffee">Drip Coffee</option>
+              <option value="latte">Latte</option>
+            </select>
+
+            <button type="submit">Order</button>
+
+          </fieldset>
+        </form>
+        <section>
+          <h3>Previous Orders</h3>
+          <ul id="previousOrders">
+
+          </ul>
+        </section>
+      </main>
+      <script src="js/app.js"></script>
+    </body>
+  </html>
