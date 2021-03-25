@@ -1,12 +1,16 @@
 'use strict';
 
-const catButtonElem = document.getElementById('catbutton');
+const catButtonElem = document.querySelector('#cat-container button');
+const removeCatsButtonElem = document.querySelector('#cat-remover button');
+
 
 const handleCatButtonClick = function () {
 
   if (!localStorage.cats) return;
 
   const catsFromLS = JSON.parse(localStorage.cats);
+
+  catListElem.innerHTML = "";
 
   for (let i in catsFromLS) {
     const catData = catsFromLS[i];
@@ -38,5 +42,12 @@ function handleListClick(event) {
   }
 }
 
+function handleRemoveCatsButtonClick(event) {
+  catListElem.innerHTML = "";
+  Cat.all = [];
+  localStorage.setItem("cats", JSON.stringify(Cat.all));
+}
+
 catButtonElem.addEventListener('click', handleCatButtonClick);
+removeCatsButtonElem.addEventListener('click', handleRemoveCatsButtonClick);
 catListElem.addEventListener('click', handleListClick);
